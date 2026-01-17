@@ -4,28 +4,37 @@ Límites departamentales de Bolivia en formato GeoJSON, limpios y optimizados pa
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 bolivia-departamentos-geojson/
 ├── bolivia/                      # Polígono completo de Bolivia
-│   └── bolivia.geojson          # País completo (admin_level=2)
-├── departamentos/               # Límites departamentales individuales
-│   ├── chuquisaca.geojson
-│   ├── cochabamba.geojson
-│   ├── beni.geojson
-│   ├── la-paz.geojson
-│   ├── oruro.geojson
-│   ├── pando.geojson
-│   ├── potosi.geojson
-│   ├── santa-cruz.geojson
-│   └── tarija.geojson
+│   └── bolivia.geojson           # País completo (admin_level=2)
+├── departamentos/                # Cada departamento en su propia carpeta
+│   ├── chuquisaca/
+│   │   └── chuquisaca.geojson
+│   ├── cochabamba/
+│   │   └── cochabamba.geojson
+│   ├── beni/
+│   │   └── beni.geojson
+│   ├── la-paz/
+│   │   └── la-paz.geojson
+│   ├── oruro/
+│   │   └── oruro.geojson
+│   ├── pando/
+│   │   └── pando.geojson
+│   ├── potosi/
+│   │   └── potosi.geojson
+│   ├── santa-cruz/
+│   │   └── santa-cruz.geojson
+│   └── tarija/
+│       └── tarija.geojson
 └── README.md
 ```
 
 ---
 
-## 🗺️ Archivos Disponibles
+## Archivos Disponibles
 
 ### 1. **Bolivia Completa** (`bolivia/bolivia.geojson`)
 - **Descripción:** Polígono exterior del país sin divisiones internas
@@ -44,7 +53,7 @@ bolivia-departamentos-geojson/
 
 ---
 
-## 📊 Fuente de Datos
+## Fuente de Datos
 
 - **Origen:** [OpenStreetMap](https://www.openstreetmap.org)
 - **Herramienta:** [Overpass Turbo](https://overpass-turbo.eu/)
@@ -52,28 +61,28 @@ bolivia-departamentos-geojson/
 
 ---
 
-## 🛠️ Criterios Técnicos
+## Criterios Técnicos
 
 ### Limpieza de Datos
-- ✅ Solo propiedades esenciales (`name`)
-- ✅ Sin metadatos innecesarios de OSM
-- ✅ Sin relaciones o nodos adicionales
+- Solo propiedades esenciales (`name`)
+- Sin metadatos innecesarios de OSM
+- Sin relaciones o nodos adicionales
 
 ### Optimización
-- ✅ Simplificación de geometrías con [MapShaper](https://mapshaper.org/)
-- ✅ Bolivia completa: simplificación agresiva (5-10%)
-- ✅ Departamentos: simplificación moderada (10-15%)
-- ✅ Archivos < 500KB por departamento
+- Simplificación de geometrías con [MapShaper](https://mapshaper.org/)
+- Bolivia completa: simplificación agresiva (5-10%)
+- Departamentos: simplificación moderada (10-15%)
+- Archivos < 500KB por departamento
 
 ### Validación
-- ✅ Visualización correcta en GitHub
-- ✅ Sin agujeros ni superposiciones
-- ✅ Coordenadas en WGS84 (EPSG:4326)
-- ✅ Geometrías cerradas y válidas
+- Visualización correcta en GitHub
+- Sin agujeros ni superposiciones
+- Coordenadas en WGS84 (EPSG:4326)
+- Geometrías cerradas y válidas
 
 ---
 
-## 🚀 Uso
+## Uso
 
 ### JavaScript/Web
 ```javascript
@@ -103,7 +112,7 @@ with open('departamentos/cochabamba.geojson', 'r', encoding='utf-8') as f:
 
 ---
 
-## 📝 Listado de Departamentos
+## Listado de Departamentos
 
 1. **Chuquisaca** - Capital: Sucre
 2. **Cochabamba** - Capital: Cochabamba
@@ -117,19 +126,19 @@ with open('departamentos/cochabamba.geojson', 'r', encoding='utf-8') as f:
 
 ---
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones son bienvenidas. Si encuentras errores en los límites o tienes sugerencias de optimización, por favor abre un issue.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Los datos geográficos están bajo licencia [ODbL](https://opendatacommons.org/licenses/odbl/) de OpenStreetMap.
 
 ---
 
-## 🔗 Enlaces Útiles
+## Enlaces Útiles
 
 - [OpenStreetMap Bolivia](https://www.openstreetmap.org/relation/252645)
 - [Overpass Turbo](https://overpass-turbo.eu/)
