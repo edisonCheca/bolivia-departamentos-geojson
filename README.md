@@ -92,7 +92,7 @@ fetch('bolivia/bolivia.geojson')
   .then(data => console.log(data));
 
 // Cargar un departamento
-fetch('departamentos/la-paz.geojson')
+fetch('departamentos/cochabamba/cochabamba.geojson')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
@@ -106,7 +106,7 @@ with open('bolivia/bolivia.geojson', 'r', encoding='utf-8') as f:
     bolivia = json.load(f)
 
 # Cargar un departamento
-with open('departamentos/cochabamba.geojson', 'r', encoding='utf-8') as f:
+with open('departamentos/cochabamba/cochabamba.geojson', 'r', encoding='utf-8') as f:
     cochabamba = json.load(f)
 ```
 
