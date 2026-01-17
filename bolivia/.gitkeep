@@ -1,0 +1,4 @@
+# Este directorio contendrá el archivo GeoJSON del polígono completo de Bolivia (admin_level=2)
+# Archivo: bolivia.geojson o bolivia-border.geojson
+# Optimización: Simplificación agresiva (5-10%) para carga rápida
+# Propiedades: Solo "name": "Bolivia"
