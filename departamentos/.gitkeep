@@ -1,0 +1,4 @@
+# Este directorio contendrá los archivos GeoJSON de cada departamento de Bolivia
+# Formato: departamento-nombre.geojson (ej: la-paz.geojson, cochabamba.geojson)
+# Nivel administrativo: admin_level=4
+# Optimización: Simplificación moderada para balance entre detalle y rendimiento
